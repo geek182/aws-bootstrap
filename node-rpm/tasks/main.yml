@@ -1,7 +1,7 @@
 ---
 - name: Download NODE and unarchive
   unarchive:
-    src: https://github.com/geek182/repo/blob/master/node-v6.11.2-linux-x64.tar.xz 
+    src: https://github.com/geek182/repo/blob/master/node-v6.11.2-linux-x64.tar.gz 
     dest: /tmp/
     remote_src: True
 
