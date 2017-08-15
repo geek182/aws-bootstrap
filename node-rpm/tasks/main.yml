@@ -6,7 +6,5 @@
 
 - name: Configure and Make Install
   shell: "tar -xvf /tmp/node-v6.11.2.tar.gz  && cd /tmp/node-v6.11.2 && ./configure && make && sudo make install"
-  de-v6.11.2.tar.gz
-  
 - name: Install pm2 
   shell: 'sudo su - root -c "npm install pm2@latest -g" '
