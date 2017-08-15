@@ -1,0 +1,12 @@
+---
+- name: Download NODE and unarchive
+  unarchive:
+    src: https://github.com/geek182/repo/blob/master/node-v6.11.2-linux-x64.tar.xz 
+    dest: /tmp/
+    remote_src: True
+
+- name: Configure and Make Install
+  shell: "cd /tmp/node-v6.11.2 && ./configure && make && sudo make install"
+  
+- name: Install pm2 
+  shell: 'sudo su - root -c "npm install pm2@latest -g" '
