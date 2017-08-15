@@ -1,7 +1,7 @@
 ---
 - name: Download NODE 
   get_url:
-    url: https://github.com/geek182/repo/blob/master/node-v6.11.2.tar.gz 
+    url: https://github.com/geek182/repo/blob/master/node-v6.11.2-linux-x64.tar.gz 
     dest: /tmp/
 
 - name: Configure and Make Install
