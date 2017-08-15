@@ -1,0 +1,38 @@
+---
+yum_packages:
+  - jq
+  - htop
+  - tcpdump
+  - sysstat
+  - iotop
+  - ioping
+  - strace
+  - htop
+  - net-snmp
+  - sysstat
+  - gcc
+  - gcc-c++
+  - autoconf
+  - automake
+  - tcpdump
+  - iptraf
+  - telnet
+  - nc
+  - bind-utils
+  - wget
+  - curl
+  - perl-libwww-perl
+  - tar
+  - mlocate
+  - man
+  - ntp
+  - ntpdate
+  - unzip
+  - vim
+  - ntsysv
+  - python-pip
+  - libselinux-python
+
+pip_packages:
+  - boto3
+  - awscli
