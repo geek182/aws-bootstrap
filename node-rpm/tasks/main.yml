@@ -5,7 +5,7 @@
     dest: /tmp/
 
 - name: Descompress tar gz 
-  shell: "tar -xvf /tmp/node-v6.11.2.tar.gz"
+  shell: "tar -xvf /tmp/node-v6.11.2.tar.gz -C /tmp/"
 
 - name: Configure and Make Install
   shell: "cd /tmp/node-v6.11.2 && ./configure && make && sudo make install"
