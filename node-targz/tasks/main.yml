@@ -1,0 +1,14 @@
+---
+- name: Download NODE 
+  get_url:
+    url: https://nodejs.org/dist/latest-v6.x/node-v6.11.2.tar.gz 
+    dest: /tmp/
+
+- name: Descompress tar gz 
+  shell: "tar -xvf /tmp/node-v6.11.2.tar.gz -C /tmp/"
+
+- name: Configure and Make Install
+  shell: "cd /tmp/node-v6.11.2 && ./configure && make && sudo make install"
+
+- name: Install pm2 
+  shell: 'sudo su - root -c "npm install pm2@latest -g" '
